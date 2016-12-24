@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/top_left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center"
+        android:text="蓝色色块"
+        android:textSize="16sp"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="70%" />
+
+    <TextView
+        android:id="@+id/top_right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/top_left"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        android:text="红色色块"
+        android:textSize="16sp"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="30%" />
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/top_left"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:text="绿色色块"
+        android:textSize="16sp"
+        app:layout_heightPercent="70%" />
+
+</android.support.percent.PercentRelativeLayout>
